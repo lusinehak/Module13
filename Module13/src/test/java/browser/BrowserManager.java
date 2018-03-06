@@ -87,7 +87,7 @@ public class BrowserManager {
             Logger.info("Element " + webDriver.findElement(locator).getText() + " is unhighlighted.");
             unHighlightElement(locator);
         } else {
-              Logger.info("Element " + webDriver.findElement(locator) + " is not present.");
+              Logger.error("Element " + webDriver.findElement(locator) + " is not present.");
         }
         return isPresent;
     }
@@ -98,7 +98,7 @@ public class BrowserManager {
             String screenshotName = "screenshots/screenshot" + System.nanoTime();
             File copy = new File(screenshotName + ".png");
             FileUtils.copyFile(screenshot, copy);
-            Logger.info("Saved screenshot: " + screenshotName);
+            Logger.info("Screenshot of page is saved in screenshots directory: " + screenshotName);
         } catch (IOException e) {
             Logger.error("Failed to make screenshot");
         }
