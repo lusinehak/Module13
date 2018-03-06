@@ -1,0 +1,22 @@
+23:05:53:704 INFO  Logger.log - Test 'Login to GMail Account' is starting
+23:05:57:443 INFO  Logger.info - Open the page https://accounts.google.com
+23:05:59:932 INFO  Logger.info - Element  exist
+23:05:59:967 INFO  Logger.info - Highlight element 
+23:06:00:003 INFO  Logger.info - Type on element  Element is located: By.id: identifierId
+23:06:00:134 INFO  Logger.info - Unhighlight element 
+23:06:00:210 INFO  Logger.info - Element NEXT exist
+23:06:00:218 INFO  Logger.info - Highlight element By.xpath: //div[@id='identifierNext']
+23:06:00:248 INFO  Logger.info - Click on element NEXT Element is located: By.xpath: //div[@id='identifierNext']
+23:06:00:329 INFO  Logger.info - Unhighlight element By.xpath: //div[@id='identifierNext']
+23:06:00:864 INFO  Logger.info - Element  exist
+23:06:00:885 INFO  Logger.info - Highlight element 
+23:06:00:909 INFO  Logger.info - Type on element  Element is located: By.name: password
+23:06:01:250 INFO  Logger.info - Unhighlight element 
+23:06:01:316 INFO  Logger.info - Element NEXT exist
+23:06:01:326 INFO  Logger.info - Highlight element By.xpath: //div[@id='passwordNext']
+23:06:01:358 INFO  Logger.info - Click on element NEXT Element is located: By.xpath: //div[@id='passwordNext']
+23:06:01:442 INFO  Logger.info - Unhighlight element By.xpath: //div[@id='passwordNext']
+23:06:06:433 INFO  Logger.info - Element My Account is present and highlighted.
+23:06:06:462 INFO  Logger.info - Element My Account is unhighlighted.
+23:06:06:479 INFO  Logger.log - Test 'Login to GMail Account' is completed successfully
+23:06:06:481 INFO  Logger.info - Close the browser
