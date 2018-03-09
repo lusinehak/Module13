@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d %p %c{2} [%t] %m%n" />
+        </Console>
+
+        <!-- File Appender -->
+        <File name="File" fileName="report.log" append="false">
+            <PatternLayout
+                    pattern="%d %p %c{2} [%t] %m%n" />
+        </File>
+
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>

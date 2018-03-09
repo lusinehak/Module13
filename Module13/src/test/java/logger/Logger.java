@@ -1,8 +1,11 @@
 package logger;
 
+import org.apache.logging.log4j.LogManager;
+
 public class Logger {
 
-    public static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(Logger.class);
+    public static org.apache.logging.log4j.Logger logger = LogManager.getLogger(Logger.class);
+
 
     public static void error(String message, Throwable throwable) {
         logger.error(message, throwable);
